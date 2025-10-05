@@ -2,5 +2,34 @@
 @import "tailwindcss";
 
 body{
-    font-family: 'Outfit', sans-serif;
+        font-family: 'Outfit', sans-serif;
+}
+
+/* Gradient text animation used in Header */
+.animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 6s linear infinite;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Utility to ensure text uses background-clip for gradient text */
+.bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* A smooth pink/white/pink gradient for the header title */
+.gradient-pink-white {
+    background-image: linear-gradient(90deg, #ec4899 0%, #ffffff 50%, #ec4899 100%);
 }
