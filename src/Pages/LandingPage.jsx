@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'; // adjust path if needed
+import Header from '../Components/Header';
 
 const LandingPage = () => {
   return (
@@ -10,7 +11,7 @@ const LandingPage = () => {
 
       {/* Main content */}
       <main className="flex-grow">
-        {/* Add your landing page content here */}
+        <Header/>
       </main>
 
       {/* Footer at the bottom */}

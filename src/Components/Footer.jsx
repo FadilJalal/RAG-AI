@@ -1,9 +1,9 @@
 import React from "react";
-import { Facebook, Twitter, Github, Linkedin } from "lucide-react";
+import { Instagram, Twitter, Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white-100 py-8 px-6">
+    <footer className="bg-black text-white py-8 px-6">
       <div className="max-w-7xl mx-auto relative flex flex-col md:flex-row items-center md:items-start">
 
         {/* Left: Logo and Copyright */}
@@ -22,8 +22,8 @@ const Footer = () => {
 
         {/* Right: Social Icons */}
         <div className="flex space-x-4 text-gray-400 md:absolute right-0 mt-4 md:mt-0">
-          <a href="https://facebook.com" className="hover:text-pink-500" aria-label="Facebook">
-            <Facebook size={24} />
+          <a href="https://instagram.com" className="hover:text-pink-500" aria-label="Instagram">
+            <Instagram size={24} />
           </a>
           <a href="https://twitter.com" className="hover:text-pink-500" aria-label="Twitter">
             <Twitter size={24} />
